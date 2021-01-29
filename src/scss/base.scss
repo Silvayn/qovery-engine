@@ -1,22 +1,342 @@
-body {
-  font-family: 'eesti';
-  font-size: 16px;
-  background: #FDFDFD;
+@font-face {
+  font-family: 'Hk Grotesk Bold';
+  src: url('/assets/fonts/hk-grotesk/hkgrotesk-bold-webfont.woff2') format('woff2'),
+  url('/assets/fonts/hk-grotesk/hkgrotesk-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+
 }
 
+@font-face {
+  font-family: 'Hk Grotesk';
+  src: url('/assets/fonts/hk-grotesk/hkgrotesk-regular-webfont.woff2') format('woff2'),
+  url('/assets/fonts/hk-grotesk/hkgrotesk-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: "SanFrancisco";
+  src: url("/assets/fonts/san-francisco/SF-UI-Text-Regular.otf");
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Hk Grotesk';
+  font-size: 16px;
+  background-color: #f9f9fd;
+}
 
 .container {
   padding: 0 32px;
-  max-width: 1440px;
+  max-width: 1280px;
   width: 100%;
+  margin: auto;
 }
 
+.q-hero__mb__24 {
+  margin-bottom: 24px;
+}
+
+.q-hero__mb__17 {
+  margin-bottom: 17px;
+}
+
+.q-hero__mb__128 {
+  margin-top: 8em!important;
+
+  .q_main__left__title {
+    margin-top: 6px;
+  }
+}
+
+.q-hero__mt__48 {
+  margin-top: 3em;
+}
+
+.q-hero__mt__65 {
+  margin-top: 65px;
+}
+
+.q-hero__banner {
+  background-color: #151B2B;
+  color: #ffffff;
+  padding-top: 41px;
+  height: 90vh;
+}
+
+.q-hero__logo img {
+  width: 158px;
+  height: auto;
+}
+
+.q-hero__left {
+  max-width: 487px;
+  margin: 120px 70px 0 0;
+
+  h1 {
+    font-family: "Hk Grotesk";
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 50px;
+  }
+
+  h1 span {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .q-hero__headline {
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 35px;
+  }
+
+  .q-hero__summary {
+    font-family: "SanFrancisco";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 24px;
+    color: rgba(134, 134, 178, 1);
+  }
+}
+
+.q-hero__ctas {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.q-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding: 9px 16px 9px 16px;
+  font-family: "SanFrancisco";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+
+  &.q-btn__github {
+    background-color: rgba(69, 70, 88, 1);
+  }
+
+  &.q-btn__discord {
+    background-color: rgba(101, 120, 192, 1);
+  }
+}
+
+.q-btn:first-child {
+  margin-right: 24px;
+}
+
+.q-btn img:first-child {
+  width: 16px;
+  margin-right: 7px;
+}
+
+.q-btn img:first-child {
+  width: 19px;
+}
+
+.q-hero__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.q-hero__right {
+  img {
+    max-width: 567px;
+    max-height: 687px;
+  }
+}
+
+.q-main__flex__end {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.q-main__left {
+  max-width: 904px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  .q-main__left__heading:first-child {
+    .q_main__left__title {
+      margin-top: 3em;
+    }
+  }
+
+  .q-main__left__heading {
+    max-width: 853px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+
+    .q_main__left__title {
+      font-family: "Hk Grotesk Bold";
+      font-size: 2em;
+      font-weight: 800;
+      line-height: 2em;
+      color: rgba(69, 70, 88, 1);
+    }
+
+    .q-main__left__text {
+      font-family: "SanFrancisco";
+      font-size: 1em;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 150%;
+      color: rgba(69, 70, 88, 1);
+      text-align: center;
+      max-height: 72px;
+      margin: 0;
+    }
+
+    img {
+      max-width: 853px;
+      max-height: 472px;
+      margin-top: 2em;
+
+      &.q-main__left__background {
+        position: absolute;
+        left: 22%;
+      }
+    }
+  }
+}
+
+.q-main__left__grid {
+
+  .q-main__left_grid_row:first-child {
+    margin-top: 101px;
+  }
+
+  .q-main__left_grid_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    .q-main__left_grid_item {
+      max-width: 428px;
+      height: auto;
+
+      h3 {
+        font-family: "Hk Grotesk Bold";
+        font-size: 1.5em;
+        font-weight: 700;
+        line-height: 110%;
+        color: #454658;
+      }
+
+      p {
+        font-family: "SanFrancisco";
+        font-size: 1em;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 150%;
+        color: rgba(69, 70, 88, 1);
+        margin: 0;
+      }
+
+      a {
+        font-family: "SanFrancisco";
+        font-size: 0.75em;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #5D64D2;
+        margin-top: 1em;
+      }
+
+      .q-main__left_grid_item__app {
+        width: auto;
+        max-height: 159px;
+      }
+
+      .q-main__left_grid_item__resilient {
+        width: auto;
+        max-height: 169px;
+      }
+
+      .q-main__left_grid_item__top {
+        width: auto;
+        max-height: 233px;
+      }
+
+      .q-main__left_grid_item__policies {
+        width: auto;
+        max-height: 232px;
+      }
+    }
+  }
+}
+
+.q-main__partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-family: "Hk Grotesk Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 110%;
+    text-align: center;
+    color: #454658;
+    margin: 5.22em 0 1.5em 0;
+  }
+
+  ul {
+    display: inline-flex;
+
+    li {
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0 2em;
+
+      a > img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 5.5em;
+  background: #151B2B;
+  height: 170px;
+}
 
 @media (max-width: 750px) {
-
   .container {
     padding: 0 24px;
   }
-
 }
 

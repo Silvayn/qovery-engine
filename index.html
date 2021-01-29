@@ -31,19 +31,119 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <!-- Favicon -->
+    <link rel="icon" href="./assets/img/favicon.ico"/>
     <meta name="theme-color" content="#fff">
 </head>
-
 <body>
-<include src="src/partials/nav.html"></include>
 
-<div class="container">
-    <h1>Quick Start Parcel Project</h1>
-</div>
+<header>
+    <section class="q-hero__banner">
+        <div class="container">
+            <div class="q-hero__logo">
+                <img src="./assets/img/logo.svg" alt="Qovery">
+            </div>
+            <div class="q-hero__content">
+                <div class="q-hero__left">
+                    <h1 class="q-hero__mb__24">Qovery Engine
+                        <a class="github-button" href="https://github.com/Qovery/engine" data-size="large" data-show-count="true" aria-label="Star Qovery/engine on GitHub">Star</a>
+                    </h1>
+                    <p class="q-hero__headline q-hero__mb__24">Abstraction layer to deploy microservices applications on any Cloud provider.</p>
+                    <p class="q-hero__summary">Qovery Engine is an open-source abstraction layer product that turns easy apps deployment on AWS, GCP, Azure and others Cloud providers.</p>
+                    <div class="q-hero__ctas">
+                        <a href="#" class="q-btn q-btn__github"><img src="/assets/img/github.svg" alt="Github">See on Github</a>
+                        <a href="#" class="q-btn q-btn__discord"><img src="/assets/img/discord.svg" alt="Discord">Join us on Discord</a>
+                    </div>
+                </div>
+                <div class="q-hero__right">
+                    <img src="/assets/img/hero-illus.svg" alt="Template SVG">
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
 
-<include src="src/partials/footer.html"></include>
+<main>
+    <section class="q-main__content">
+        <div class="container">
+            <div class="q-main__left">
+                <div class="q-main__left__heading">
+                    <h2 class="q_main__left__title">How does it work?</h2>
+                    <p class="q-main__left__text q-hero__mb__24">Qovery Engine is an open-source abstraction layer product that turns easy apps deployment on AWS, GCP, Azure and others Cloud providers. The Qovery Engine is coded in Rust and takes advantage of Terraform, Helm, Kubectl, Docker to manage resources.</p>
+                    <img src="/assets/img/policies.svg" alt="Policies">
+                </div>
+                <div class="q-main__left__heading q-hero__mb__128">
+                    <h2 class="q_main__left__title">Usage</h2>
+                    <p class="q-main__left__text q-hero__mb__17">Initialize EKS (AWS Kubernetes) and ECR (AWS container registry) on AWS</p>
+                    <img class="q-main__left__background" src="/assets/img/bg.svg" alt="Policies">
+                </div>
+                <div class="q-hero__ctas q-hero__mt__48">
+                    <a href="#" class="q-btn q-btn__github"><img src="/assets/img/github.svg" alt="Github">See on Github</a>
+                    <a href="#" class="q-btn q-btn__discord"><img src="/assets/img/discord.svg" alt="Discord">Join us on Discord</a>
+                </div>
+            </div>
+        </div>
+        <div class="q-main__left__grid">
+            <div class="q-main__left_grid_row">
+                <div class="q-main__left_grid_item">
+                    <img class="q-main__left_grid_item__app q-hero__mb__24" src="/assets/img/keys/app.svg">
+                    <h3 class="q-hero__mb__24">Deploy real world applications</h3>
+                    <p>Qovery Engine empowers you to deploy complex applications, such as a backend, a frontend, and a database in a very simple way. <br><br>
+                        Servers, networking, security, all is done by the Engine for you. </p>
+                    <a href="#" class="q-btn__see__more">See More</a>
+                </div>
+                <div class="q-main__left_grid_item">
+                    <img class="q-main__left_grid_item__resilient q-hero__mb__24" src="/assets/img/keys/resilient.svg">
+                    <h3 class="q-hero__mb__24">Resiliency is key</h3>
+                    <p>Qovery Engine knows when something goes wrong on the deployment of your applications. Qovery Engine is built with resiliency in mind. <br><br>
+                        A transactional engine inspired by what is provided into ACID databases has been developed at the heart of the product to rollback on a consistent and working application version when something goes wrong. </p>
+                    <a href="#" class="q-btn__see__more">See More</a>
+                </div>
+            </div>
+            <div class="q-main__left_grid_row q-hero__mt__65">
+                <div class="q-main__left_grid_item">
+                    <img class="q-main__left_grid_item__top q-hero__mb__24" src="/assets/img/keys/top.svg">
+                    <h3 class="q-hero__mb__24">On top of the best tools</h3>
+                    <p>Qovery Engine does not reinvent the wheel. It takes advantage of the best tools in the Cloud industry, such as Kubernetes, Terraform, and Helm to manage the deployment of the infrastructure and your applications.<br><br>
+                        Servers, networking, security, all is done by the Engine for you.</p>
+                    <a href="#" class="q-btn__see__more">See More</a>
+                </div>
+                <div class="q-main__left_grid_item">
+                    <img class="q-main__left_grid_item__policies q-hero__mb__24" src="/assets/img/keys/policies.svg">
+                    <h3 class="q-hero__mb__24">Extensible</h3>
+                    <p>Qovery Engine is built to be highly extensible. Adding the support of a Cloud provider or a Continuous Integration platform is as simple as implementing a simple programmatic interface. </p>
+                    <a href="#" class="q-btn__see__more">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="q-main__partners">
+        <h2>They use Qovery Engine</h2>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="/assets/img/strapi.svg" alt="Strapi">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/assets/img/zendesk.svg" alt="Zendesk">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="/assets/img/helios.svg" alt="Helios">
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer></footer>
 
 <script src="src/index.js"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 </body>
 </html>

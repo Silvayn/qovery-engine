@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "assets": "^3.0.1",
+    "got": "^11.8.1",
     "js": "^0.1.0",
     "parcel-plugin-asset-copier": "^1.1.0",
     "parcel-plugin-html-root-syntax": "0.0.3",
